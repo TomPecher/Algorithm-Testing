@@ -1,10 +1,13 @@
 
-# Basic Python implementation of the Stack data structure
+# Basic Python implementation of the stack data structure
 class StackPython:
     # init(collection)
-    def __init__(self, collection=[]):
+    def __init__(self, collection=None):
         """Initialises an empty stack. If a collection is specified, initialises a stack with those items."""
-        self.items = collection
+        if collection:
+            self.items = collection
+        else:
+            self.items = []
 
     # is_empty()
     def is_empty(self):
@@ -34,3 +37,6 @@ class StackPython:
     def size(self):
         """Returns the number of elements in the stack."""
         return len(self.items)
+
+if __name__ == '__main__':
+    pass

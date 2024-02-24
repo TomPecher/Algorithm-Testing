@@ -5,7 +5,7 @@ sys.path.append('Stack/Python/')
 
 from StackPython import *
 
-# Basic Python implementation of the Stack data structure
+# Test class for StackPython
 class test_StackPython(unittest.TestCase):
     # test_StackPython()
     def test___init__(self):
@@ -30,9 +30,9 @@ class test_StackPython(unittest.TestCase):
     # test_push()
     def test_push(self):
         # Case 1: Stack is empty
-        # s1 = StackPython()
-        # s1.push('a')
-        # self.assertEqual(s1.items, ['a'])
+        s1 = StackPython()
+        s1.push('a')
+        self.assertEqual(s1.items, ['a'])
 
         # Case 2: Stack is non-empty
         s2 = StackPython([1, 2, 3])
@@ -64,3 +64,6 @@ class test_StackPython(unittest.TestCase):
         # Case 2: Stack is non-empty
         s2 = StackPython([1, 2, 3])
         self.assertEqual(s2.size(), 3)
+
+if __name__ == '__main__':
+    pass

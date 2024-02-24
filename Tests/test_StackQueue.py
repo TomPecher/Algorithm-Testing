@@ -5,7 +5,7 @@ sys.path.append('Queue/Python/')
 
 from QueuePython import *
 
-# Basic Python implementation of the Queue data structure
+# Test class for QueuePython
 class test_QueuePython(unittest.TestCase):
     # test_QueuePython()
     def test___init__(self):
@@ -30,9 +30,9 @@ class test_QueuePython(unittest.TestCase):
     # test_ensqueue()
     def test_enqueue(self):
         # Case 1: Queue is empty
-        # s1 = QueuePython()
-        # s1.push('a')
-        # self.assertEqual(s1.items, ['a'])
+        s1 = QueuePython()
+        s1.enqueue('a')
+        self.assertEqual(s1.items, ['a'])
 
         # Case 2: Queue is non-empty
         s2 = QueuePython([1, 2, 3])
@@ -64,3 +64,6 @@ class test_QueuePython(unittest.TestCase):
         # Case 2: Queue is non-empty
         s2 = QueuePython([1, 2, 3])
         self.assertEqual(s2.size(), 3)
+
+if __name__ == '__main__':
+    pass

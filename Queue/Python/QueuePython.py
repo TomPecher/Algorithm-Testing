@@ -1,10 +1,13 @@
 
-# Basic Python implementation of the Queue data structure
+# Basic Python implementation of the queue data structure
 class QueuePython:
     # init(collection)
-    def __init__(self, collection=[]):
+    def __init__(self, collection=None):
         """Initialises an empty queue. If a collection is specified, initialises a queue with those items."""
-        self.items = collection
+        if collection:
+            self.items = collection
+        else:
+            self.items = []
 
     # is_empty()
     def is_empty(self):
@@ -34,3 +37,6 @@ class QueuePython:
     def size(self):
         """Returns the number of elements in the queue."""
         return len(self.items)
+
+if __name__ == '__main__':
+    pass

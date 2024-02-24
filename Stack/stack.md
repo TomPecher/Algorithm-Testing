@@ -3,7 +3,7 @@ init(collection)      - Initialises an empty stack. If a collection is specified
 
 is_empty()            - Returns True if stack contains no items, returns False otherwise.
 
-push(items)           - Inserts the specified item at the end of the stack.
+push(item)            - Inserts the specified item at the end of the stack.
 
 pop()                 - Returns the item at the end of the stack (if it exists), removing it in the process.
 
