@@ -1,7 +1,7 @@
 
 # Basic Python implementation of the Stack data structure
 class StackPython:
-    # Stack(collection)
+    # init(collection)
     def __init__(self, collection=[]):
         """Initialises an empty stack. If a collection is specified, initialises a stack with those items."""
         self.items = collection

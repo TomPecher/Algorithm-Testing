@@ -1,5 +1,5 @@
 
-Stack(collection)     - Initialises an empty stack. If a collection is specified, initialises a stack with those items.
+init(collection)      - Initialises an empty stack. If a collection is specified, initialises a stack with those items.
 
 is_empty()            - Returns True if stack contains no items, returns False otherwise.
 
