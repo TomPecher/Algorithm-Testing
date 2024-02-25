@@ -8,7 +8,7 @@ class Node:
     def __str__(self):
         return self.data
 
-# Basic Python implementation of the linked data structure
+# Basic Python implementation of the linked list data structure
 class LinkedListPython:
     # init()
     def __init__(self):
@@ -88,7 +88,6 @@ class LinkedListPython:
         if index == 0:
             self.head = current_node.next
         else:
-            print(previous_node, current_node, current_node.next)
             previous_node.next = current_node.next
         del current_node
 

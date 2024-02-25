@@ -1,7 +1,7 @@
 
 import unittest
 import sys
-sys.path.append('LinkedList/Python/')
+sys.path.append('DataStructures/LinkedList/Python/')
 
 from LinkedListPython import *
 

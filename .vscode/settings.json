@@ -2,16 +2,18 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./Tests",
+        "./_tests",
         "-p",
         "test_*.py"
     ],
-    "python.testing.pytestEnabled": true,
+    "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
     "python.analysis.extraPaths": [
-        "./Stack/Python",
-        "./Queue/Python",
-        "./Tests/test_",
-        "./LinkedList/Python"
+        "./_tests/test_",
+        "./DataStructures/LinkedList/Python",
+        "./DataStructures/Queue/Python",
+        "./DataStructures/Stack/Python",
+        "./Algorithms/SortingAlgorithms/SortingPython",
+        "./Algorithms/SortingAlgorithms"
     ]
 }

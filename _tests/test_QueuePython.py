@@ -1,7 +1,7 @@
 
 import unittest
 import sys
-sys.path.append('Queue/Python/')
+sys.path.append('DataStructures/Queue/Python/')
 
 from QueuePython import *
 

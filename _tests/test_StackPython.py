@@ -1,7 +1,7 @@
 
 import unittest
 import sys
-sys.path.append('Stack/Python/')
+sys.path.append('DataStructures/Stack/Python/')
 
 from StackPython import *
 
